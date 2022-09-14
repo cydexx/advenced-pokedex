@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
@@ -67,16 +66,20 @@ section {
   width: 100%;
 }
 .poke-container .poke-box {
-  width: 30rem;
+  width: 25rem;
   border-radius: 1.5rem;
-  min-height: 35rem;
+  min-height: 30rem;
   padding: 2rem;
   margin: 2rem;
 }
 .poke-container .poke-box img {
   margin: 10px 0;
-  width: 80%;
   align-items: center;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+  margin-bottom: 2.5rem;
 }
 .poke-container .poke-box h2 {
   font-size: 25px;
@@ -84,10 +87,6 @@ section {
 }
 .poke-container .poke-box p {
   font-size: 15px;
-}
-
-.sprite {
-  font: optional;
 }
 
 .footer {
@@ -162,4 +161,10 @@ section {
 .footer:hover .credit a {
   transform: scale(1.2) rotate(360deg);
   transition: 0.5s;
+}
+
+@media screen and (min-width: 1500px) {
+  section {
+    padding: 1%;
+  }
 }/*# sourceMappingURL=main.css.map */

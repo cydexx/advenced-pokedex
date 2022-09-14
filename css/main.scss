@@ -6,7 +6,6 @@ $color-white: #fff;
 $smallText: 0.5em;
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
@@ -66,15 +65,18 @@ section {
   width: 100%;
 
   .poke-box {
-    width: 30rem;
+    width: 25rem;
     border-radius: 1.5rem;
-    min-height: 35rem;
+    min-height: 30rem;
     padding: 2rem;
     margin: 2rem;
     img {
       margin: 10px 0;
-      width: 80%;
       align-items: center;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 2rem;
+      margin-bottom: 2.5rem;
     }
     h2 {
       font-size: 25px;
@@ -84,9 +86,6 @@ section {
       font-size: 15px;
     }
   }
-}
-.sprite {
-  font: optional;
 }
 .footer {
   background-color: $color-black;
@@ -160,4 +159,10 @@ section {
     transform: scale(1.2) rotate(360deg);
     transition: 0.5s;
   }
+}
+@media screen and (min-width: 1500px) {
+  section {
+    padding: 1%;
+  } //mobile için search barı her zaman görülebilicek
+  //sticky yapıcaz ve fontlar ayarlanmalı
 }

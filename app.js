@@ -2,7 +2,7 @@ const searchInput = document.querySelector("#poke-input");
 const searchBtn = document.querySelector(".search-btn");
 const pokeContainer = document.querySelector(".poke-container");
 
-const pokeCount = 905; //905 tane pokemon var
+const pokeCount = 9; //905 tane pokemon var
 const pokeTypeColors = {
   fire: "#FDDFDF",
   grass: "#DEFDE0",
@@ -19,8 +19,9 @@ const pokeTypeColors = {
   fighting: "#E6E0D4",
   normal: "#F5F5F5",
   ice: "#e0f5ff ",
-  ghost: "#636363",
-  dark: "#2d2c2c",
+  ghost: "#636363", //değiştir
+  dark: "#2d2c2c", //değiştir
+  steel: "#2d5555", //bu renk çokiyi oldu
 };
 const initPokemon = async () => {
   for (let i = 1; i <= pokeCount; i++) {
