@@ -53,8 +53,7 @@ const createPokemonBox = (pokemon) => {
         <h2 class="pokemon-name">${name}</h2>
         <p class="pokemon-id">#${id}</p>
         <p class="pokemon-type">${type}</p> 
-        <img class="sprite"src="${sprite} " alt="${name} image"loading="lazy" />
-    `;
+    `; /*<img class="sprite"src="${sprite} " alt="${name} image"loading="lazy" /> old sprites*/
   pokeContainer.appendChild(pokemonElement);
 };
 initPokemon();
