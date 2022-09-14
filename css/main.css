@@ -55,12 +55,17 @@ section {
   height: 5rem;
   border-radius: 1.5rem;
   font-size: 20px;
+  background-color: #e94f4f;
 }
 .search-container .search-btn {
   width: 5rem;
   height: 5rem;
   border-radius: 1.5rem;
   margin: 1rem;
+  background-color: #e94f4f;
+}
+.search-container .search-btn i {
+  font-size: 1.5rem;
 }
 
 .poke-container {
@@ -86,11 +91,15 @@ section {
   border-radius: 2rem;
   margin-bottom: 2.5rem;
 }
-.poke-container .poke-box h2 {
-  font-size: 25px;
+.poke-container .poke-box .pokemon-name {
+  font-size: 20px;
+  color: #1b1b1b;
   margin: 1rem auto;
 }
-.poke-container .poke-box p {
+.poke-container .poke-box .pokemon-id {
+  font-size: 17px;
+}
+.poke-container .poke-box .pokemon-type {
   font-size: 15px;
 }
 
@@ -185,8 +194,36 @@ section {
   transition: 0.5s;
 }
 
-@media screen and (min-width: 1500px) {
-  section {
-    padding: 1%;
+@media screen and (max-width: 500px) {
+  .search-container .poke-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  .search-container .poke-search input {
+    width: 50rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    font-size: 20px;
+    background-color: #e94f4f;
+    margin: 1rem;
+  }
+  .search-container .search-btn {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    background-color: #e94f4f;
+  }
+  .search-container .search-btn i {
+    font-size: 1.5rem;
+  }
+  .poke-container {
+    margin: 0;
+  }
+  .back-to-top-button {
+    bottom: 25px;
+    right: 45%;
   }
 }/*# sourceMappingURL=main.css.map */

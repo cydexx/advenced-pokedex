@@ -52,8 +52,8 @@ const createPokemonBox = (pokemon) => {
         <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png" alt="${name} image"loading="lazy" />
         <h2 class="pokemon-name">${name}</h2>
         <p class="pokemon-id">#${id}</p>
-        <p class="pokemon-type">Type: ${type}</p> 
-        <img class="sprite"src="${sprite}" alt="${name} image"loading="lazy" />
+        <p class="pokemon-type">${type}</p> 
+        <img class="sprite"src="${sprite} " alt="${name} image"loading="lazy" />
     `;
   pokeContainer.appendChild(pokemonElement);
 };
