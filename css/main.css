@@ -39,23 +39,28 @@ section {
   align-items: center;
 }
 
-.poke-search {
+.search-container {
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 3rem 0;
 }
-.poke-search input,
-.poke-search .search-btn {
-  padding: 1rem 5rem;
-  border-radius: 3px;
-  border: none;
-  background-color: #fff;
+.search-container .poke-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
-.poke-search .search-btn {
-  padding: 1rem 1rem;
-  cursor: pointer;
+.search-container .poke-search input {
+  width: 50rem;
+  height: 5rem;
+  border-radius: 1.5rem;
+  font-size: 20px;
+}
+.search-container .search-btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1.5rem;
+  margin: 1rem;
 }
 
 .poke-container {
@@ -89,34 +94,51 @@ section {
   font-size: 15px;
 }
 
+.back-to-top-button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #e94f4f;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+.back-to-top-button:after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+.back-to-top-button:hover {
+  cursor: pointer;
+  background-color: #1b1b1b;
+}
+.back-to-top-button:active {
+  background-color: #cb3838;
+}
+.back-to-top-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .footer {
   background-color: #1b1b1b;
   text-align: center;
   border-radius: 1.5rem;
   border: 0.2rem dashed #e94f4f;
 }
-.footer .search {
-  display: flex;
-  justify-content: center;
-}
-.footer .search .search-input {
-  width: 20rem;
-  height: 3rem;
-  box-shadow: 0px 0px 17px -2px #fff;
-  border-radius: 1.5rem;
-}
-.footer .search .btn {
-  margin-top: 0;
-  margin-left: 1rem;
-  padding: 1rem 2rem;
-  border-radius: 3rem;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #cb3838;
-  box-shadow: 0px 0px 17px -2px #cb3838;
-}
 .footer .footer-socials {
-  padding-bottom: 2rem;
+  padding: 1rem 0;
 }
 .footer .footer-socials a {
   width: 4.5rem;

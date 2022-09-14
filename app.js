@@ -1,8 +1,8 @@
-const searchInput = document.querySelector("#poke-input");
+const searchInput = document.querySelector("#search-input");
 const searchBtn = document.querySelector(".search-btn");
 const pokeContainer = document.querySelector(".poke-container");
 
-const pokeCount = 905; //905 tane pokemon var
+const pokeCount = 151; //max 905
 const pokeTypeColors = {
   fire: "#FDDFDF",
   grass: "#DEFDE0",
@@ -37,8 +37,8 @@ const getPokemon = async (id) => {
 };
 
 const createPokemonBox = (pokemon) => {
-  const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1); //basic ilk basamağı uppercase yaptık
-  const id = pokemon.id.toString().padStart(3, "0"); //pokemon idsini 3 basamaklı yaptık
+  const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
+  const id = pokemon.id.toString().padStart(3, "0");
   const type = pokemon.types[0].type.name;
   const color = pokeTypeColors[type];
   const sprite =
@@ -54,7 +54,6 @@ const createPokemonBox = (pokemon) => {
         <p class="pokemon-id">#${id}</p>
         <p class="pokemon-type">Type: ${type}</p> 
         <img class="sprite"src="${sprite}" alt="${name} image"loading="lazy" />
-        
     `;
   pokeContainer.appendChild(pokemonElement);
 };
@@ -69,6 +68,7 @@ searchInput.addEventListener("input", function (e) {
       pokemonName.parentElement.style.display = "none";
     }
   });
+  /*
   const pokemonIds = document.querySelectorAll(".pokemon-id");
   pokemonIds.forEach((pokemonId) => {
     pokemonId.parentElement.style.display = "block";
@@ -76,11 +76,12 @@ searchInput.addEventListener("input", function (e) {
       pokemonId.parentElement.style.display = "none";
     }
   });
+  /*   can't find the error but doesn't work
   const pokemonTypes = document.querySelectorAll(".pokemon-type");
   pokemonTypes.forEach((pokemonType) => {
     pokemonType.parentElement.style.display = "block";
-    if (!pokemonType.innerHTML.includes(search)) {
+    if (!pokemonType.innerHTML.toLocaleLowerCase().includes(search)) {
       pokemonType.parentElement.style.display = "none";
     }
-  });
+  });*/
 });
