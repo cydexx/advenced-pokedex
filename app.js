@@ -2,7 +2,7 @@ const searchInput = document.querySelector("#poke-input");
 const searchBtn = document.querySelector(".search-btn");
 const pokeContainer = document.querySelector(".poke-container");
 
-const pokeCount = 9; //905 tane pokemon var
+const pokeCount = 905; //905 tane pokemon var
 const pokeTypeColors = {
   fire: "#FDDFDF",
   grass: "#DEFDE0",
