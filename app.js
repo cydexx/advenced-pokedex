@@ -42,7 +42,8 @@ const createPokemonBox = (pokemon) => {
   const type = pokemon.types[0].type.name;
   const color = pokeTypeColors[type];
   const sprite =
-    pokemon.sprites.versions["generation-viii"].icons.front_default;
+    pokemon.sprites.versions["generation-iii"]["firered-leafgreen"]
+      .front_default;
 
   const pokemonElement = document.createElement("div");
   pokemonElement.classList.add("poke-box");
