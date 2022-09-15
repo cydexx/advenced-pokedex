@@ -99,6 +99,10 @@ section {
     .pokemon-type {
       font-size: 15px;
     }
+    &:hover {
+      transform: scale(1.1);
+      border: dashed $color-light;
+    }
   }
 }
 .back-to-top-button {
@@ -143,8 +147,6 @@ section {
 .footer {
   background-color: $color-black;
   text-align: center;
-  border-radius: 1.5rem;
-  border: 0.2rem dashed $color-light;
   .footer-socials {
     padding: 1rem 0;
     a {
@@ -156,7 +158,6 @@ section {
       padding: 1rem;
       box-shadow: 0px 0px 10px 2px $color-main;
       transition: 0.001s;
-      text-align: center;
       &:hover {
         transform: scale(1.2) rotate(360deg);
         transition: 0.8s;
