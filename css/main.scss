@@ -197,27 +197,9 @@ section {
 @media screen and (max-width: 500px) {
   .search-container {
     .poke-search {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
       input {
-        width: 50rem;
-        height: 5rem;
-        border-radius: 1.5rem;
         font-size: 10px;
-        background-color: $color-light;
         margin: 1rem;
-      }
-    }
-    .search-btn {
-      width: 5rem;
-      height: 5rem;
-      border-radius: 1.5rem;
-      margin: 1rem;
-      background-color: $color-light;
-      i {
-        font-size: 1.5rem;
       }
     }
   }
