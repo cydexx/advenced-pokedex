@@ -91,6 +91,9 @@ section {
   padding: 2rem;
   margin: 2rem;
 }
+.poke-container .poke-box .sprite {
+  width: 50%;
+}
 .poke-container .poke-box img {
   margin: 10px 0;
   align-items: center;
